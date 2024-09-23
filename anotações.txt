@@ -35,6 +35,9 @@
 --- parágrafo ---
     <p>
 
+--- span ---
+    <span></span> - Serve para separar pequenos textos que estão contidos em outros elementos, o intuito é aplicar estilos CSS somente nesses pequenos trechos desejados
+
 --- rodapé ---
     <footer></footer>
 
