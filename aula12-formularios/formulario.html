@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário aqui</h1>
+
+    <form>
+        <label for="campo_id">Nome:</label>
+            <input required id="campo_id" type="text" placeholder="Insira seu nome aqui"><br><br>
+        <label for="campo_password">Senha:</label>
+            <input required id="campo_password" type="password" placeholder="Insira a senha"><br><br>
+        <label for="campo_email">E-mail:</label>
+            <input required id="campo_email" type="email" placeholder="Insira o e-mail"><br><br>
+        <input type="submit"> <!-- por padrão "enviar", mas alterável com value"""-->
+    </form>
+    <hr>
+
+    <h2>Escolha:</h2>
+
+    <!--
+    name="" -> deixar igual para todas as opções - já serve para fazer seleção única
+    value="" -> valor que o formulário irá retornar para o backend
+    label for="" -> relaciona a legenda <label> com o input
+    -->
+
+    <!--
+    type="radio" é utilizado para escolha única
+    posso usar required em cada input para obrigar que o usuário escolha pelo menos uma opção
+    -->
+    <form id="escolha_animal">
+        <input required type="radio" id="escolha_cachorro" name="animal" value="cachorro">
+            <label for="escolha_cachorro">Cachorro</label><br><br>
+        <input required type="radio" id="escolha_gato" name="animal" value="gato">
+            <label for="escolha_gato">Gato</label><br><br>
+        <input required type="radio" id="escolha_passaro" name="animal" value="passaro">
+            <label for="escolha_passaro">Pássaro</label><br><br>
+        <input type="submit">
+    </form>
+    <hr>
+
+    <!--
+    type="checkboxes" é utilizado para escolhas múltiplas
+    required não funciona em inputs do tipo checkbox, é necessário validação através do backend
+    -->
+     <form id="eletrodomesticos" required>
+        <input type="checkbox" id="escolha_televisao" value="televisao">
+            <label for="escolha_televisao">Televisão</label><br><br>
+        <input type="checkbox" id="escolha_fogao" value="fogao">
+            <label for="escolha_fogao">Fogão</label><br><br>
+        <input type="checkbox" id="escolha_geladeira" value="geladeira">
+            <label for="escolha_geladeira">Geladeira</label><br><br>
+        <input type="submit">
+     </form>
+     <hr>
+
+     <!--
+     selected disabled - faz com que a opção não possa ser selecionada
+     aceita o required
+     -->
+     <form id="escolha_cor">
+        <select id="select_cor" name="select_cor" required>
+            <option value="" selected disabled>Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+        </select>
+        <input type="submit">
+     </form>
+    <hr>
+
+
+    <!--
+    aceita required
+    rows="5"
+    cols=""
+    placeholder=""
+    -->
+    <h2>Digite uma mensagem</h2>
+    <form>
+        <textarea required id="" placeholder="Digite aqui sua mensagem"></textarea>
+        <input type="submit">
+    </form>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,179 @@
+--- metatags ---
+    São informações que serviram apenas para serem lidas pelo navegador
+    <html lang=""> idioma
+
+    <head>
+        <meta charset="UTF-8"> - padrão de codificação
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> - ajuda a página a adaptar-se a tela | não dispensa CSS etc.
+        <meta name="description" content="descrição aqui">  - uma descrição do site quando compartilhado
+        <meta name="keywords" content="estudo, html, css, javascript"> - palavras chave que a página aborda para ajudar a ranquear no google | já foi mais útil no passado
+        <meta name="author" content="Eduardo Carlos"> - nome do autor
+        
+--- comentários ---
+    <!--comentário-->
+
+--- artigo ---
+    <article></article>
+
+--- tags de título ---
+    <h1>Título 1</h1> - Sempre deixar apenas um título h1, usar a tag mais de uma vez
+    <h2></h2> - Sub-Título 2
+    <h3></h3> - Sub-Título 3
+    <h4></h4> - Sub-Título 4
+    <h5></h5> - Sub-Título 5
+    <h6></h6> - Sub-Título 6 | não existe sub-título 7 em diante
+
+--- cabeçalho ---
+    <header></header>
+
+--- trecho de navegação (links) ---
+    <nav></nav>
+
+--- seção ---
+    <section></section>
+
+--- parágrafo ---
+    <p>
+
+--- rodapé ---
+    <footer></footer>
+
+--- simbolo de autoria ---
+    &copy;
+
+--- negrito ---
+    <b></b> - apenas para deixar em negrito
+    <strong> - para dar ênfase maior naquele texto, além de deixar em negrito</strong>
+    Resultado estético é igual, mas para o navegador é diferente
+
+--- itálico ---
+    <i></i>
+
+--- sublinhado ---
+    <u></u>
+
+--- marcação ---
+    <mark></mark>
+
+--- riscado ---
+    <del></del> - fica legal para preços que estão na promoção
+
+--- texto menor ---
+    <small></small> - fica legal para e-mails | o mais adequado é fazer com CSS
+
+--- divisão ---
+    <hr></hr> - uma linha na horizontal para dividir em partes
+
+--- quebra de linha ---
+    <br> - o mais adequado é fazer com CSS
+
+--- texto na parte superior e inferior da linha ---
+    <sup></sup> - para escrever expoentes de números por exemplo
+    <sub></sub>
+
+--- descrição de uma palavra ---
+    <abbr title="descrição"> palavra </abbr>
+
+--- endereços (físico, url, telefone etc) ---
+    <address></address> - deixa em itálico
+
+--- referências ---
+    <cite></cite> - citação para filmes por exemplo | deixa em itálico
+    <q></q> - para representar falas de alguém | deixa entre aspas
+
+--- destaque especial no texto ---
+    <blockquote></blockquote> - cria uma espécie de espaçamento antes do trecho, parecendo o início de um parágrafo
+
+--- inverter o texto ---
+    <bdo dir="rtl"></bdo> - rtl = right to left
+
+--- links ---
+    link absoluto
+        <a href="google.com">Ir para o google</a> - abre na mesma aba
+        <a href="google.com" target="_blank">Ir para o google</a> - abre em outra aba
+    link relativo
+        <a href="path/other_page.html">Outra página</a>
+        <a href="../index.html">Outra página</a>
+
+--- imagens --- (aula 8)
+    site para pesquisar imagens gratuitas e sem direitos: pexels, pixabay, freepik
+    site para pesquisar ícones: flaticon
+    site photoshop genérico: photopea
+    site para mapeamento de imagem: image-map.net - <map></map>
+    <img src="url">
+    <img src="path">
+    <img src="path" width="300px" height="300px">
+    <img src="path" alt=""> - alt é uma descrição da imagem para auxiliar deficientes visuais
+
+--- tabelas ---
+    <table width="" border="1">
+    <table>
+        <tr>
+            <th>Nome</th> - table header (cabeçalho da tabela)
+            <th>Idade</th>
+            <th>Peso</th>
+        </tr>
+        <tr>
+            <td>João</td> - table data (dado da tabela)
+            <td>20</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>21</td>
+            <td>49</td>
+        </tr>
+    </table>
+
+--- listas ---
+    Não ordenadas (sem contagem)
+        <ul> - Unordered lists 
+            <li>Arroz</li> - list item
+            <li>Feijão</li>
+            <li>Macarrão</li>
+        </ul>
+
+    Ordenadas (com contagem)
+        <ol> - Ordened lists
+            <li>Arroz</li> - list item
+            <li>Feijão</li>
+            <li>Macarrão</li>
+        </ol>
+
+--- iframe --- (aula 11)
+    Suporta uma página dentro de outra
+    Nem todos os sites permitem que sejam carregados, para evitar golpes
+    Posso colocar um vídeo do youtube (incorporar)
+    Posso carregar outra página html dentro da principal utilizando links
+    <iframe src="path/pagina" title=""> </iframe>
+
+--- formulários --- (ver conteudo aula 12 para melhor entendimento)
+    <form> //action="arquivoquerecebe.js" method="get">
+        <label for="id_do_input">descrição para o campo seguinte</label> - o "for" faz com que ao clicar no label, o teclado vá para o input referido
+            <input id="id_do_input" type="number/text/etc" placeholder="Instrução do que escrever">
+        <input type="submit" value"O que fica escrito no botão">
+
+        input type
+        input type"email" - valida se a entrada possui @
+        input type="text"
+        input type="password"
+        input type="radio"
+        input type="checkbox"
+    </form>
+
+    <form>
+        <select>
+            <option value="" select disabled></option>
+            <option value=""></option>
+        </select>
+    </form>
+
+    <form>
+        <textarea></textarea>
+    </form>
+
+--- botão ---
+    <button ... onclick="" ... ></button>
+
+--- audio ---
+    <audio src=""></audio>
